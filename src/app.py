@@ -1,27 +1,40 @@
-import json
+import json, os
 from DataStructures import Queue
 from sms import send
 
 # there queue has to be declared globally (outside any other function)
 # that way all methods have access to it
-queue = Queue(mode="FIFO")
+queue1 = Queue(mode="FIFO")
     
 def print_queue():
     # you must print on the console the entire queue list
     print("Printing the entire list...")
-    print(queue.get_queue())
+    print(queue1.get_queue())
+    
 
 def add():
-    pass
+    phone_number = input("Hello, Please enter the best phone number to reach you at.")
+    queue1.enqueue(phone_number)
+    print(f"Your phone number {phone_number} has been added to the list.")
 
 def dequeue():
-    pass
+    phone_number = queue1.dequeue()
+    send(body='', to='')
+    #insert send sms statement to the end user
+    #print(f"Your phone number {phone_number} has been removed and notified.")
 
 def save():
+    #obtain thee cuurent array using ---> queue1.get_queue()
+    #write to the json file.
+    #open file, prepared for writing(w), and write method to json file
+    imported_queue = json.load(file)
+    #close the file
     pass
 
 def load():
-    pass 
+    #open the file for reading "r"
+    #take the content inside the file to load
+    pass  
         
     
 print("\nHello, this is the Command Line Interface for a Queue Managment application.")
