@@ -10,15 +10,15 @@ alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PA
 # Unset irrelevant variables.
 deactivate nondestructive
 
-setenv VIRTUAL_ENV '/workspace/exercise-queue-management-cli-python/.venv'
+setenv VIRTUAL_ENV '/workspace/queue-management-cli-python-2020/.venv'
 
 set _OLD_VIRTUAL_PATH="$PATH:q"
 setenv PATH "$VIRTUAL_ENV:q/bin:$PATH:q"
 
 
 
-if ('(exercise-queue-management-cli-python) ' != "") then
-    set env_name = '(exercise-queue-management-cli-python) '
+if ('(queue-management-cli-python-2020) ' != "") then
+    set env_name = '(queue-management-cli-python-2020) '
 else
     set env_name = '('"$VIRTUAL_ENV:t:q"') '
 endif

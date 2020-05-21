@@ -1,4 +1,4 @@
-#!/workspace/exercise-queue-management-cli-python/.venv/bin/python
+#!/workspace/queue-management-cli-python-2020/.venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

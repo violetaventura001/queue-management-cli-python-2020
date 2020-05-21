@@ -46,7 +46,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV='/workspace/exercise-queue-management-cli-python/.venv'
+VIRTUAL_ENV='/workspace/queue-management-cli-python-2020/.venv'
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
@@ -61,8 +61,8 @@ fi
 
 if [ -z "${VIRTUAL_ENV_DISABLE_PROMPT-}" ] ; then
     _OLD_VIRTUAL_PS1="${PS1-}"
-    if [ "x(exercise-queue-management-cli-python) " != x ] ; then
-        PS1="(exercise-queue-management-cli-python) ${PS1-}"
+    if [ "x(queue-management-cli-python-2020) " != x ] ; then
+        PS1="(queue-management-cli-python-2020) ${PS1-}"
     else
         PS1="(`basename \"$VIRTUAL_ENV\"`) ${PS1-}"
     fi
